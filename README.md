@@ -1,2 +1,24 @@
 # latera
-Latera is a monster that chews up and summarizes articles. It has room for evolution, and the app's functionality is flexible and extensible.
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
