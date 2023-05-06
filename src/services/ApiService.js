@@ -13,4 +13,7 @@ export default {
   saveArticle(article) {
     return apiClient.post("/articles", article);
   },
+  getArticleInfo(url) {
+    return apiClient.get("/articleinfo", { params: { url } });
+  },
 };
