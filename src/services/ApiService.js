@@ -14,6 +14,12 @@ export default {
     return apiClient.post("/articles", article);
   },
   getArticleInfo(url) {
-    return apiClient.get("/articleinfo", { params: { url } });
+    return apiClient.get("/articleinfo", { params: { url: url } });
+  },
+  getArticles() {
+    return apiClient.get("/articles");
+  },
+  deleteArticle(id) {
+    return apiClient.delete(`/articles/${id}`);
   },
 };

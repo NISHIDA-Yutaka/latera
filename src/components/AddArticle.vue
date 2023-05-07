@@ -26,10 +26,11 @@ export default {
           title: response.data.title,
           url: this.url,
           content: response.data.content,
+          thumbnail_url: response.data.imageUrl,
         };
         await ApiService.saveArticle(articleInfo);
         this.url = "";
-        // ... その他の処理（例：成功メッセージの表示）
+        this.$emit("article-added"); // イベントを親コンポーネントに送信
       } catch (error) {
         console.error("Error fetching article info:", error);
       }
