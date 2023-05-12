@@ -4,7 +4,7 @@
       <img :src="article.thumbnail_url" alt="Article thumbnail" class="w-full h-80 object-cover">
       <div class="p-4">
         <h3 class="text-lg font-semibold">{{ article.title }}</h3>
-        <p class="mt-2 text-sm text-gray-600">{{ article.summary }}</p>
+        <p class="mt-2 text-sm text-gray-600">{{ article.content }}</p>
         <p class="mt-2 text-xs text-gray-400">{{ getDomain(article.url) }}</p>
       </div>
     </a>
