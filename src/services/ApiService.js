@@ -22,4 +22,10 @@ export default {
   deleteArticle(id) {
     return apiClient.delete(`/articles/${id}`);
   },
+  archiveArticle(id) {
+    return apiClient.post(`/articles/${id}/archive`); // Use POST for archive action
+  },
+  refreshSummary(id) {
+    return apiClient.patch(`/articles/${id}/refresh-summary`);
+  },
 };
